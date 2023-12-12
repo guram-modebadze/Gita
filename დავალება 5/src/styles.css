@@ -1,0 +1,210 @@
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
+.board {
+  width: 800px;
+  margin: auto;
+  height: 800px;
+  position: relative;
+}
+
+.game {
+  position: absolute;
+  font-size: 100px;
+  font-weight: 800;
+  color: #ff0000;
+  left: 30%;
+  bottom: 50%;
+  z-index: 5;
+
+  animation: game 2.5s normal forwards ease;
+}
+
+.header {
+  font-size: 80px;
+  text-align: center;
+}
+
+.even {
+  height: 100px;
+
+  background: linear-gradient(
+    to right,
+    #f8e7bb,
+    #f8e7bb 12.5%,
+    #f2ca5c 12.5%,
+    #f2ca5c 25%,
+    #f8e7bb 25%,
+    #f8e7bb 37.5%,
+    #f2ca5c 37.5%,
+    #f2ca5c 50%,
+    #f8e7bb 50%,
+    #f8e7bb 62.5%,
+    #f2ca5c 62.5%,
+    #f2ca5c 75%,
+    #f8e7bb 75%,
+    #f8e7bb 87.5%,
+    #f2ca5c 87.5%
+  );
+}
+
+.odd {
+  height: 100px;
+  background: linear-gradient(
+    to right,
+    #f2ca5c,
+    #f2ca5c 12.5%,
+    #fbf5de 12.5%,
+    #fbf5de 25%,
+    #f2ca5c 25%,
+    #f2ca5c 37.5%,
+    #fbf5de 37.5%,
+    #fbf5de 50%,
+    #f2ca5c 50%,
+    #f2ca5c 62.5%,
+    #fbf5de 62.5%,
+    #fbf5de 75%,
+    #f2ca5c 75%,
+    #f2ca5c 87.5%,
+    #fbf5de 87.5%
+  );
+}
+
+img {
+  width: 80px;
+  height: 80px;
+  margin: 8px;
+
+  animation-name: moves;
+  animation-duration: 10 s;
+  animation-timing-function: linear;
+}
+
+.p4 {
+  animation: firstMove 1s normal forwards linear;
+  animation-delay: 3s;
+}
+.P4 {
+  animation: secondMove 1s normal forwards linear;
+  animation-delay: 4s;
+}
+
+.m1 {
+  animation: thirdMove 1s normal forwards linear;
+  animation-delay: 5s;
+}
+
+.K1 {
+  animation: fourthMove 1s normal forwards linear;
+  animation-delay: 6s;
+}
+
+.k1 {
+  animation: fifthMove 1s normal forwards linear;
+  animation-delay: 7s;
+}
+.M1 {
+  animation: sixthMove 1s normal forwards linear;
+  animation-delay: 8s;
+}
+
+.w {
+  animation: sevenMove1 1s normal forwards linear;
+  animation-delay: 9s;
+}
+.e1 {
+  animation: sevenMove2 1s normal forwards linear;
+  animation-delay: 9s;
+}
+
+.P8 {
+  animation: eightMove 1s normal forwards linear;
+  animation-delay: 10s;
+}
+
+@keyframes firstMove {
+  0% {
+    transform: translate(0px, 0px);
+  }
+  100% {
+    transform: translate(0px, 200px);
+  }
+}
+@keyframes secondMove {
+  0% {
+    transform: translate(0px, 0px);
+  }
+  100% {
+    transform: translate(0px, -200px);
+  }
+}
+@keyframes thirdMove {
+  0% {
+    transform: translate(0px, 0px);
+  }
+  100% {
+    transform: translate(100px, 200px);
+  }
+}
+@keyframes fourthMove {
+  0% {
+    transform: translate(0px, 0px);
+  }
+  100% {
+    transform: translate(300px, -300px);
+  }
+}
+@keyframes fifthMove {
+  0% {
+    transform: translate(0px, 0px);
+  }
+  100% {
+    transform: translate(400px, 400px);
+  }
+}
+@keyframes sixthMove {
+  0% {
+    transform: translate(0px, 0px);
+  }
+  100% {
+    transform: translate(100px, -200px);
+  }
+}
+
+@keyframes sevenMove1 {
+  0% {
+    transform: translate(0px, 0px);
+  }
+  100% {
+    transform: translate(-200px, 0px);
+  }
+}
+
+@keyframes sevenMove2 {
+  0% {
+    transform: translate(0px, 0px);
+  }
+  100% {
+    transform: translate(200px, 0px);
+  }
+}
+@keyframes eightMove {
+  0% {
+    transform: translate(0px, 0px);
+  }
+  100% {
+    transform: translate(0px, -100px);
+  }
+}
+
+@keyframes game {
+  0% {
+  }
+  100% {
+    transform: scale(500%);
+    opacity: 0;
+    color: rgb(0, 255, 0);
+  }
+}
