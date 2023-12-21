@@ -1,0 +1,41 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  font-size: 16px;
+}
+
+.p {
+  color: #ff6f28;
+  color: #00cb9d;
+  color: #03c7a0;
+  color: #96bb7c;
+  color: #ffc8ac;
+}
+
+.first-section {
+  background-color: #ffc8ac;
+}
+
+.nav-button {
+  background-color: #96bb7c;
+  padding: 10px;
+  color: white;
+  border: none;
+}
+
+.nav-button:hover {
+  transform: scale(105%);
+  transition-duration: 0.2s;
+}
+
+.wel {
+  color: #96bb7c;
+}
+
+.learn {
+  color: #96bb7c;
+}
+
+.section-2 {
+  padding-top: 128px;
+}
