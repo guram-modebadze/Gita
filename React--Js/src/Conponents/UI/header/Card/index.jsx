@@ -11,8 +11,6 @@ import {
 } from "@chakra-ui/react";
 
 const index = ({ item }) => {
-  console.log(item);
-
   return (
     <Card
       direction={{ base: "column", sm: "row" }}
@@ -28,7 +26,7 @@ const index = ({ item }) => {
 
       <Stack>
         <CardBody>
-          <Heading size="md">item name</Heading>
+          <Heading size="md">{item?.title}</Heading>
 
           <Text py="2">item description</Text>
         </CardBody>
